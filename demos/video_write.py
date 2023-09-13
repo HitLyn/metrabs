@@ -11,7 +11,7 @@ OUTPUT = sys.argv[2]
 
 def main():
     #model = tfhub.load('https://bit.ly/metrabs_l')
-    model = tf.saved_model.load('/home/lyn/HitLyn/metrabs/models/metrabs_rn101_y4')
+    model = tf.saved_model.load('/homeL/cong/HitLyn/metrabs/models/metrabs_eff2l_y4_360')
     skeleton = 'smpl_24'
     joint_names = model.per_skeleton_joint_names[skeleton].numpy().astype(str)
     joint_edges = model.per_skeleton_joint_edges[skeleton].numpy()
